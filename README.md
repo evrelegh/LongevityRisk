@@ -32,8 +32,8 @@ The accompanying technical note demonstrates how structural longevity scenarios 
 
 | File | Description |
 |------|-------------|
-| `PensionFund.ipynb` | Main Jupyter notebook implementing the actuarial model. |
-| `pension_paper.docx` | Technical note describing the methodology, assumptions and results. |
+| `LongevityRisk.ipynb` | Main Jupyter notebook implementing the actuarial model. |
+| `LongevityRisk.pdf` | Technical note describing the methodology, assumptions and results. |
 
 ---
 
