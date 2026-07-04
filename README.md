@@ -1,5 +1,7 @@
 # Longevity Risk Modelling
 
+![Graphical abstract](figures/longevity-risk-overview.png)
+
 **Computational actuarial modelling of longevity risk using Gompertz–Makeham mortality, compound-Poisson aggregation, Fast Fourier Transform (FFT), and structural longevity scenarios.**
 
 ---
