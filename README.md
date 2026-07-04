@@ -1,67 +1,74 @@
-# Life
+# Longevity Risk Modelling
 
-**Computational actuarial modelling of longevity risk using Gompertz–Makeham mortality, compound-Poisson FFT aggregation, and structural longevity scenarios.**
+**Computational actuarial modelling of longevity risk using Gompertz–Makeham mortality, compound-Poisson aggregation, Fast Fourier Transform (FFT), and structural longevity scenarios.**
+
+---
 
 ## Overview
 
-This repository contains a reproducible actuarial modelling project investigating the distinction between **diversifiable (idiosyncratic)** and **systematic (undiversifiable)** longevity risk in a stylised occupational pension fund.
+This repository contains a fully reproducible actuarial modelling framework for analysing **idiosyncratic** and **systematic** longevity risk in a stylised occupational pension fund.
 
-The project combines classical actuarial mortality modelling with modern open-source scientific computing in Python. Its emphasis is on transparency, reproducibility and computational efficiency rather than methodological novelty.
+The implementation combines classical actuarial techniques with modern scientific computing in Python. The emphasis is on transparency, reproducibility, computational efficiency and independent validation.
 
-The accompanying technical note demonstrates how structural longevity scenarios can be analysed using an exact aggregate liability distribution computed by Fast Fourier Transform (FFT) convolution.
+The accompanying technical note demonstrates how structural longevity scenarios can be analysed through an exact aggregate liability distribution computed using Fast Fourier Transform (FFT) convolution.
+
+---
+
+## Main Results
+
+The project illustrates several important actuarial observations:
+
+- Individual longevity risk diversifies efficiently in large pension portfolios.
+- Systematic longevity improvements remain largely undiversifiable.
+- Interest-rate assumptions generally have a substantially larger financial impact than plausible longevity changes.
+- Exact FFT aggregation provides an efficient alternative to large-scale Monte Carlo simulation while producing identical results.
 
 ---
 
 ## Features
 
-- Gompertz–Makeham mortality modelling
+- Gompertz–Makeham mortality model
 - Income-segmented mortality calibration
-- Structural longevity scenarios (timing × magnitude)
-- Independent Solvency II longevity benchmark
-- Compound-Poisson aggregate liability model
+- Structural longevity scenario analysis
+- Independent Solvency II benchmark
+- Compound-Poisson liability model
 - Exact FFT aggregation
 - Best Estimate Liability (BEL)
 - Value-at-Risk (VaR)
 - Tail Value-at-Risk (TVaR)
-- Validation against independent Monte Carlo simulation
+- Independent Monte Carlo validation
 - Fully reproducible figures and tables
 
 ---
 
-## Repository contents
+## Repository Contents
 
 | File | Description |
 |------|-------------|
-| `LongevityRisk.ipynb` | Main Jupyter notebook implementing the actuarial model. |
-| `LongevityRisk.pdf` | Technical note describing the methodology, assumptions and results. |
+| `LongevityRisk.ipynb` | Complete computational implementation |
+| `LongevityRisk.pdf` | Technical note describing the methodology, assumptions and results |
 
 ---
 
-## Main result
+## Requirements
 
-For a large occupational pension fund, the stochastic demographic risk arising from independent deaths is small because it diversifies across members.
+Python 3.12 or later.
 
-The dominant demographic uncertainty comes from **systematic improvements in longevity**, which affect the entire portfolio simultaneously and therefore cannot be diversified away.
+Main packages:
 
-The repository provides a reproducible computational framework for quantifying both components and comparing them with the standard Solvency II longevity stress.
-
----
-
-## Technologies
-
-- Python
-- Jupyter Notebook
 - NumPy
 - Pandas
 - SciPy
 - Matplotlib
-- `aggregate` (Stephen J. Mildenhall)
+- aggregate (Stephen J. Mildenhall)
 
 ---
 
 ## Purpose
 
-This repository accompanies a technical note on computational actuarial modelling. It is intended as a transparent and reproducible research implementation rather than production software.
+This repository accompanies the technical note and provides a transparent, reproducible research implementation.
+
+It is intended for educational, actuarial and research purposes rather than production use.
 
 Comments, suggestions and constructive criticism are welcome.
 
