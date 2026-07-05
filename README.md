@@ -49,6 +49,8 @@ The project illustrates several important actuarial observations:
 |------|-------------|
 | `LongevityRisk.ipynb` | Complete computational implementation |
 | `LongevityRisk.pdf` | Technical note describing the methodology, assumptions and results |
+| `/data/Deaths_1x1.txt` | Data from HMD, Human Mortality Database for Belgium |
+| `/data/Exposures_1x1.txt` | Data from HMD, Human Mortality Database for Belgium |
 
 ---
 
@@ -64,6 +66,7 @@ Main packages:
 - Matplotlib
 - aggregate (Stephen J. Mildenhall)
 
+data (Deaths_1x1.txt and Exposures_1x1.txt) to be placed in working directory
 ---
 
 ## Purpose
