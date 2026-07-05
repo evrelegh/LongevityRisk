@@ -67,6 +67,7 @@ Main packages:
 - aggregate (Stephen J. Mildenhall)
 
 data (Deaths_1x1.txt and Exposures_1x1.txt) to be placed in working directory
+
 ---
 
 ## Purpose
